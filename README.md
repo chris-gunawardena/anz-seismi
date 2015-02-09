@@ -3,8 +3,11 @@
 [![Build Status](https://travis-ci.org/chris-gunawardena/anz-seismi.svg?branch=master)](https://travis-ci.org/chris-gunawardena/anz-seismi)
 
 
+
 ###Intro
-This is a small project created for ANZ (Delivery Services - UICX) to demonstrate a modern web app development process.
+This is a small project created for ANZ (Delivery Services - UICX) to demonstrate a modern web app development process. 
+
+Demo page: http://chris-gunawardena.github.io/anz-seismi/#/
 
 ###Design Patterns
 
@@ -12,7 +15,7 @@ Angular uses the MVVC pattern. In this project templates, controllers and styles
  https://github.com/yeoman/generator-angular#controller
 
 ###Reusability
-- Yeoman project scafolding together with npm and bower package manager strongly enforces reusability and DRY principles by building on exising open source components.
+- Yeoman project scaffolding together with npm and bower package manager strongly enforces reusability and DRY principles by building on exising open source components.
 
 - 100% of the code is shared between all mobile platforms including iOS, Android and Windows Phone.
 
@@ -21,15 +24,16 @@ Angular uses the MVVC pattern. In this project templates, controllers and styles
 ###Knowledge sharing & Documentation
 - Gitter chat room was created and connected to github project for easy Q&A https://gitter.im/chris-gunawardena/anz-seismi
 - Github homepage readme markdown is used for documentation.
-- Extensive inline comments are used to describe code where possible.
-- Screen cpature of how to clone and build project.
+- Inline comments are used to describe code where possible.
+
 
 ###Development Process 
-- grunt live reload is used to
-- grunt build will create a minified and
+- grunt live reload is used to refresh the browser on every save. This can also compile LESS/SASS and add css browser prefixes etc. 
+
+- grunt build will create a minified and concatenated build ready for deployment in /dist
 
 ###Quality Control
-- JS Hint is used to enfoce JS best practices.
+- JS Hint is used to enforce JS best practices.
 
 ###Unit testing and Functional testing
 
@@ -104,8 +108,6 @@ grunt serve
     "jshint-stylish": "^0.2.0",
     "load-grunt-tasks": "^0.4.0",
     "time-grunt": "^0.3.1"
-
-
 
 
 

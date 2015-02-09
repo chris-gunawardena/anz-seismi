@@ -8,6 +8,7 @@
 <section class="range-slider "  data-range-slider ng-model="filter.depth" min="0" max="100"></section>
 
 
+<div class="progress" ng-repeat="quake in filtered_data">
+  <div class="progress-bar progress-bar-warning" style="width: {{quake.magnitude*10}}%">{{quake.region}} Depth: {{quake.depth}}</div>
+  <div class="progress-bar progress-bar-danger" style="width: {{quake.depth}}%">Magnitude: {{quake.magnitude}}  </div></div>
 
-
-<pre> {{filtered_data.length}} {{filtered_data|json}}
